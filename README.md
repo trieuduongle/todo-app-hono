@@ -26,6 +26,8 @@ npm run dev
 
 Maybe you will receive some error at first time, so just use README file in each app to setup before call "npm run dev" once again
 
+![TODO app main page](./todo-screen.png)
+
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
