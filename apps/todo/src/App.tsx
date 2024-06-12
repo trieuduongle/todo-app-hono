@@ -8,7 +8,6 @@ function App() {
   const [todoItems, setTodoItems] = useState<{ id: string; title: string }[]>(
     []
   );
-  const [reload, setReload] = useState(0);
 
   useEffect(() => {
     fetch(`${BACKEND_URL}/todo`, {
@@ -21,7 +20,7 @@ function App() {
       .then((data) => {
         setTodoItems(data);
       });
-  }, [reload]);
+  }, []);
 
   const inputChange = (e: any) => {
     setTask(e.target.value);
