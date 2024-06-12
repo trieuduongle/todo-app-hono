@@ -7,8 +7,9 @@
 
 # How to start:
 
-Step 1: Call "npm run db:local" to setup d1 database in local
-Step 2: Call "npm run dev" to start Honojs server
+Step 1: Create wrangler.toml from wrangler.toml.template + config variables correctly
+Step 2: Call "npm run db:local" to setup d1 database in local
+Step 3: Call "npm run dev" to start Honojs server
 
 # Pending works:
 
