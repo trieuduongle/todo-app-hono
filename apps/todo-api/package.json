@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "wrangler dev src/index.ts --port 3000",
+    "build": "echo Not support right now!!!",
     "deploy": "wrangler deploy --minify src/index.ts",
     "db:local": "wrangler d1 execute todo-db --local --file=./migrations/0000_nostalgic_retro_girl.sql && wrangler dev",
     "db:schema:generate": "drizzle-kit generate --config ./drizzle.config.ts",
