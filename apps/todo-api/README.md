@@ -1,9 +1,10 @@
 # Todo API
 
-2 endpoint:
+3 endpoints:
 
 - GET /api/todo: get all current todo items
 - POST /api/todo: create new todo item (payload must in form: { title: string })
+- DELETE /api/todo/:id: delete todo item
 
 # How to start:
 

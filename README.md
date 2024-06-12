@@ -2,6 +2,7 @@
 
 ## Used Technology/Libraries
 
+- Turbopack
 - Honojs
 - Drizzle ORM
 - Cloudflare Worker + D1 database
