@@ -1,14 +1,29 @@
-# Turborepo starter
+# TODO App
 
-This is an official starter Turborepo.
+## Used Technology/Libraries
+
+- Honojs
+- Drizzle ORM
+- Cloudflare Worker + D1 database
+- React
+
+## How this repo is initilized:
+
+1. npx create-turbo@latest
+2. cd apps && npm create hono@latest todo-api
+3. update the name + version of package.json in todo-api folder. Then Turbo will know that app immediately
+4. Do similar things to setup React app.
+5. At root folder, call "npm run dev", it will call "dev" task in all apps+packages folder( I think so)
 
 ## Using this example
 
 Run the following command:
 
 ```sh
-npx create-turbo@latest
+npm run dev
 ```
+
+Maybe you will receive some error at first time, so just use README file in each app to setup before call "npm run dev" once again
 
 ## What's inside?
 
@@ -37,8 +52,7 @@ This Turborepo has some additional tools already setup for you:
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-pnpm build
+npm run build
 ```
 
 ### Develop
@@ -46,8 +60,7 @@ pnpm build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
-pnpm dev
+npm run dev
 ```
 
 ### Remote Caching
@@ -79,3 +92,10 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
 - [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
 - [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+
+# Future Works:
+
+- Prepare pipeline to deploy to Cloudflare/Supabase ...
+- Improve frontend to better structure when call backend
+- Make things configurable through .env or wrangler.toml ...
+  (Will update more ...)
