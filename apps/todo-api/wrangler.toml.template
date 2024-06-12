@@ -1,0 +1,19 @@
+name = "todo-api"
+compatibility_date = "2023-12-01"
+main = "src/index.ts"
+
+# [vars]
+# MY_VAR = "xxxxx"
+
+# [[kv_namespaces]]
+# binding = "xxxxx"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+[[d1_databases]]
+binding = "xxxxx"
+database_name = "xxxxx"
+database_id = "xxxxx"
