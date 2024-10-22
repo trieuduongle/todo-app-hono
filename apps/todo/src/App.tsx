@@ -1,13 +1,13 @@
 import { FormEvent, useEffect, useState } from 'react';
 import './App.css';
+import { ToDoItem } from './components';
+import { ToDoItemModel } from './models';
 
 const BACKEND_URL = 'http://localhost:3000/api';
 
 function App() {
   const [task, setTask] = useState('');
-  const [todoItems, setTodoItems] = useState<{ id: string; title: string }[]>(
-    []
-  );
+  const [todoItems, setTodoItems] = useState<ToDoItemModel[]>([]);
 
   useEffect(() => {
     fetch(`${BACKEND_URL}/todo`, {
@@ -78,15 +78,7 @@ function App() {
       </form>
       <ul>
         {todoItems.map((todo) => (
-          <li key={todo.id}>
-            {todo.title}
-            <button
-              style={{ marginLeft: '1rem', backgroundColor: 'red' }}
-              onClick={() => handleDelete(todo.id)}
-            >
-              Delete
-            </button>
-          </li>
+          <ToDoItem key={todo.id} item={todo} onDelete={handleDelete} />
         ))}
       </ul>
     </>
