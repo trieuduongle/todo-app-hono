@@ -1,11 +1,11 @@
-import { ToDoItemModel } from '../..//models';
+import { TodoItemModel } from '@/core';
 
-interface ToDoItemProps {
-  item: ToDoItemModel;
+interface TodoItemProps {
+  item: TodoItemModel;
   onDelete?(id: string): void;
 }
 
-export function ToDoItem({ item, onDelete }: ToDoItemProps) {
+export function TodoItem({ item, onDelete }: TodoItemProps) {
   return (
     <li key={item.id}>
       {item.title}

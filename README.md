@@ -6,7 +6,10 @@
 - Honojs
 - Drizzle ORM
 - Cloudflare Worker + D1 database
-- React
+- React:
+  - React Query (generic types are inspired by https://github.com/alan2207/bulletproof-react)
+  - React Testing Library
+  - Jest
 
 ## How this repo is initilized:
 

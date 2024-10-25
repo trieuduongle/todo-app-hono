@@ -1,4 +1,4 @@
-export interface ToDoItemModel {
+export interface TodoItemModel {
   id: string;
   title: string;
 }
