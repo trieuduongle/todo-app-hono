@@ -12,6 +12,6 @@ app.use(
   })
 );
 
-app.route('/todo', todoRoutes);
+app.route('/todos', todoRoutes);
 
 export default app;
