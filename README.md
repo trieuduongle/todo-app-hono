@@ -6,7 +6,10 @@
 - Honojs
 - Drizzle ORM
 - Cloudflare Worker + D1 database
-- React
+- React:
+  - React Query
+  - React Testing Library
+  - Jest
 
 ## How this repo is initilized:
 
