@@ -2,7 +2,7 @@ import { TodoItemModel } from '@/core';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { TodoItem } from './TodoItem';
 
-test('User delete a To Do Item', () => {
+test('User delete a Todo Item', () => {
   const item: TodoItemModel = {
     id: 'fake-id',
     title: 'fake title',
